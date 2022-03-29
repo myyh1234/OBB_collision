@@ -78,7 +78,6 @@ def add_rect(new_rect):
 
 def write_collision():
     global WIDTH
-    # TODO : implement
     for idx, c in enumerate(collision_list):
         txt_render = font_consolas.render(f'#{c[0]} - #{c[1]}', True, BLACK)
         screen.blit(txt_render, (WIDTH - 200 + 30, 30 + idx * 40))
